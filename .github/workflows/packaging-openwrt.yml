@@ -120,7 +120,6 @@ jobs:
 
       - name: Package OpenWrt Firmware
         uses: jerbe/openwrt_packit-flippy@main
-        secrets: inherit
         if: ${{ steps.download.outputs.status }} == 'success' && !cancelled()
         env:
           OPENWRT_ARMVIRT: openwrt/bin/targets/*/*/*rootfs.tar.gz
