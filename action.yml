@@ -1,5 +1,5 @@
 name: "Make OpenWrt using flippy's script"
-author: "https://github.com/ophub/flippy-openwrt-actions"
+author: "https://github.com/jerbe/openwrt_packit-flippy"
 description: "Support Amlogic, Rockchip and Allwinner boxes."
 inputs:
   mode:

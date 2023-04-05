@@ -12,7 +12,7 @@ Introduce this Actions in the `.github/workflows/*.yml` cloud compilation script
 
 ```yaml
 - name: Package OpenWrt Firmware
-  uses: ophub/flippy-openwrt-actions@main
+  uses: jerbe/openwrt_packit-flippy@main
   env:
     OPENWRT_ARMVIRT: openwrt/bin/targets/*/*/*.tar.gz
     PACKAGE_SOC: all
@@ -71,7 +71,7 @@ According to the latest kernel packaging script released by `Flippy`, optional p
 
 ## Output parameter description
 
-According to the standard of github.com, 3 environment variables are output to facilitate the subsequent use of the compilation step. Since github.com has recently modified the settings of the fork repository, the read and write permissions of Workflow are disabled by default, so uploading to `Releases` requires adding `${{ secrets.GITHUB_TOKEN }}` and `${{ secrets.GH_TOKEN }}` to the repository and setting `Workflow read and write permissions`, see the [instructions for details](https://github.com/ophub/amlogic-s9xxx-openwrt/tree/main/make-openwrt/documents#2-set-the-privacy-variable-github_token).
+According to the standard of github.com, 3 environment variables are output to facilitate the subsequent use of the compilation step. Since github.com has recently modified the settings of the fork repository, the read and write permissions of Workflow are disabled by default, so uploading to `Releases` requires adding `${{ secrets.GITHUB_TOKEN }}` and `${{ secrets.GH_TOKEN }}` to the repository and setting `Workflow read and write permissions`, see the [instructions for details](https://github.com/jerbe/openwrt_amlogic-s9xxx/tree/main/make-openwrt/documents#2-set-the-privacy-variable-github_token).
 
 | parameter                                | For example                | Description                   |
 |------------------------------------------|----------------------------|-------------------------------|
@@ -88,5 +88,5 @@ According to the standard of github.com, 3 environment variables are output to f
 
 ## License
 
-The flippy-openwrt-actions © OPHUB is licensed under [GPL-2.0](https://github.com/ophub/flippy-openwrt-actions/blob/main/LICENSE)
+The openwrt_packit-flippy © JERBE is licensed under [GPL-2.0](https://github.com/jerbe/openwrt_packit-flippy/blob/main/LICENSE)
 

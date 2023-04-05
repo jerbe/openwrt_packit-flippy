@@ -1,7 +1,7 @@
 #==========================================================================
 # Description: Packaging OpenWrt
-# Copyright (C) 2021 https://github.com/unifreq/openwrt_packit
-# Copyright (C) 2021 https://github.com/ophub/flippy-openwrt-actions
+# Copyright (C) 2021~ https://github.com/unifreq/openwrt_packit
+# Copyright (C) 2023~ https://github.com/jerbe/openwrt_packit-flippy
 #==========================================================================
 
 name: Packaging OpenWrt
@@ -97,7 +97,7 @@ jobs:
         if: ${{ steps.init.outputs.status }} == 'success' && !cancelled()
         run: |
           # Custom repository and Releases keywords for *rootfs.tar.gz file
-          armvirt_rootfsfile_repo="ophub/amlogic-s9xxx-openwrt"
+          armvirt_rootfsfile_repo="jerbe/openwrt_amlogic-s9xxx"
           releases_tag_keywords="OpenWrt_.*lede.*/.*rootfs.tar.gz"
 
           # The following download paths, etc. can remain unchanged
@@ -119,7 +119,7 @@ jobs:
           echo "status=success" >> ${GITHUB_OUTPUT}
 
       - name: Package OpenWrt Firmware
-        uses: ophub/flippy-openwrt-actions@main
+        uses: jerbe/openwrt_packit-flippy@main
         if: ${{ steps.download.outputs.status }} == 'success' && !cancelled()
         env:
           OPENWRT_ARMVIRT: openwrt/bin/targets/*/*/*rootfs.tar.gz
