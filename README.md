@@ -1,5 +1,12 @@
 # Function description
 
+ ===========================================================================
+ 
+ **NOTE: This repository is forked from [`ophub/flippy-openwrt-actions`](https://github.com/ophub/flippy-openwrt-actions), the content has been customized and modified, please use the official repository**
+
+ ===========================================================================
+
+
 View Chinese description  |  [查看中文说明](README.cn.md)
 
 [unifreq/openwrt_packit](https://github.com/unifreq/openwrt_packit) is an OpenWrt packaging script repository developed by `Flippy`. Support Allwinner (V-Plus Cloud), and Rockchip (BeikeYun, Chainedbox L1 Pro, FastRhino R66S, FastRhino R68S, HinLink H88K/H68K, Radxa 5b/E25), and Amlogic S9xxx boxes are S905x3, S905x2, S922x, S905x, S905d, S905, S912, etc.
